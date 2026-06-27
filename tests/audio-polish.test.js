@@ -89,7 +89,7 @@ test("summarizePolish reflects processing completion and polished track referenc
   assert.strictEqual(summary.usesPolishedAudio, true);
   assert.strictEqual(summary.polishedTracks.length, 3);
   assert.ok(summary.polishedTrackLine.includes("3 polished tracks"));
-  assert.ok(summary.audioSourceLine.includes("sam-studio-polished.wav"));
+  assert.ok(summary.audioSourceLine.includes("sam-clean-polished.wav"));
 });
 
 test("serializePolish and deserializePolish preserve applied settings and polished tracks", () => {
